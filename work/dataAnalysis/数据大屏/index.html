@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>猫眼电影数据大屏</title>
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<script src="js/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<link href="css/index.css" rel="stylesheet" />
+	</head>
+	<body>
+		<header>猫眼电影数据大屏</header>
+		<div class="container m-20">
+			<div class="row">
+				<div class="col-lg-3">
+					<div class="box1">
+						<div class="title">各类型电影平均评分</div>
+						<div class="box1_con" id="box1"></div>
+					</div>
+					<div class="box2 m-20">
+						<div class="title">电影时长分布统计---漏斗图</div>
+						<div class="box2_con" id="box2"></div>
+					</div>
+				</div>
+				<div class="col-lg-6">
+					<div class="box3">
+						<div class="title">三地区电影发行数</div>
+						<div class="box3_con">
+							<div class="box3_con_left" id="box3_left"></div>
+							<div class="box3_con_right">
+								<div></div>
+								<div class="box3_con_right_top">
+									<div class="row">
+										<div class="col-lg-4 data_bg"><p>11528部</p><small>中国大陆</small></div>
+										<div class="col-lg-4 data_bg"><p>2041部</p><small>中国香港</small></div>
+										<div class="col-lg-4 data_bg"><p>2223部</p><small>中国台湾</small></div>
+									</div>
+								</div>
+								<div class="box3_con_right_bot" id="box3_right"></div>
+							</div>
+						</div>
+					</div>
+					<div class="box4 m-20">
+						<div class="title">高分导演、演员</div>
+						<!-- <div class="box4_con" id="box4"></div> -->
+						&nbsp;&nbsp;&nbsp;&nbsp;
+
+						<img src="images/high_socre_daoyan.png" width="379" height="339" />
+						&nbsp;&nbsp;&nbsp;&nbsp;
+						&nbsp;&nbsp;&nbsp;&nbsp;
+						&nbsp;&nbsp;&nbsp;&nbsp;
+						&nbsp;&nbsp;&nbsp;&nbsp;
+						&nbsp;&nbsp;&nbsp;&nbsp;
+						<img src="images/high_socre_yanyuan.png" width="379" height="339" />
+					</div>
+				</div>
+				<div class="col-lg-3 box5">
+					<div class="title">不同类型电影发行数统计</div>
+					<div class="box5_con">
+						<div class="box5_con_top" id="box5"></div>
+						<div class="title m-20">评分与票房的关系</div>
+						<img src="images/box_office.png" width="379" height="339" />
+					</div>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="js/echarts.min.js"></script>
+		<script type="text/javascript" src="js/box1.js"></script>
+		<script type="text/javascript" src="js/box2.js"></script>
+		<script type="text/javascript" src="js/box3_left.js"></script>
+		<script type="text/javascript" src="js/box3_right.js"></script>
+		<script type="text/javascript" src="js/box4.js"></script>
+		<script type="text/javascript" src="js/box5.js"></script>
+	</body>
+</html>
